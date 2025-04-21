@@ -5,20 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Walter Arévalo | Cloud & Big Data Specialist</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f4f9fc; color: #333; }
-        header { background: linear-gradient(90deg, #00487a, #1f4e79); color: white; text-align: center; padding: 60px 20px; }
-        header h1 { margin: 0; font-size: 2.5em; }
-        header p { font-size: 1.1em; margin: 10px 0 0; color: #cfe2f3; }
-        nav { background: #ffffff; border-bottom: 1px solid #dce3e8; text-align: center; padding: 15px 0; position: sticky; top: 0; z-index: 100; }
-        nav a { margin: 0 15px; text-decoration: none; color: #00487a; font-weight: bold; }
-        nav a:hover { text-decoration: underline; }
-        section { max-width: 960px; margin: auto; padding: 40px 20px; }
-        h2 { color: #1f4e79; border-bottom: 2px solid #e1e9f0; padding-bottom: 8px; }
-        ul { list-style-type: '✔️ '; padding-left: 20px; }
-        footer { background: #00487a; color: white; text-align: center; padding: 20px; margin-top: 50px; }
-        .profile-img { border-radius: 50%; width: 120px; height: 120px; object-fit: cover; margin: 20px auto; display: block; border: 4px solid white; box-shadow: 0 0 10px rgba(0,0,0,0.2); }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background: #f9fafb; color: #111827; line-height: 1.6; }
+        header { background: white; text-align: center; padding: 60px 20px 40px; border-bottom: 1px solid #e5e7eb; }
+        header h1 { font-size: 2.5em; font-weight: 700; color: #1f2937; }
+        header p { color: #6b7280; margin-top: 10px; }
+        header .cta { margin-top: 20px; }
+        header .cta a { background: #2563eb; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; }
+        nav { position: sticky; top: 0; background: white; padding: 12px 0; border-bottom: 1px solid #e5e7eb; text-align: center; z-index: 10; }
+        nav a { margin: 0 15px; color: #374151; text-decoration: none; font-weight: 500; }
+        nav a:hover { color: #2563eb; }
+        section { max-width: 900px; margin: auto; padding: 60px 20px; }
+        section h2 { font-size: 1.8em; margin-bottom: 20px; color: #1d4ed8; }
+        ul { padding-left: 20px; }
+        ul li { margin-bottom: 10px; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        footer { background: #1f2937; color: #d1d5db; text-align: center; padding: 30px 20px; margin-top: 60px; }
+        .profile-img { border-radius: 50%; width: 140px; height: 140px; object-fit: cover; margin: 20px auto; display: block; border: 4px solid #e5e7eb; }
+        @media(max-width: 768px) {
+            .grid { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
@@ -28,6 +38,9 @@
     <h1>Walter Arturo Arévalo Carranza</h1>
     <p>Arquitecto de Datos | Cloud & Big Data Specialist</p>
     <p>📍 Lima, Perú | 📞 +51 987 528 354 | ✉️ waltersud@gmail.com</p>
+    <div class="cta">
+        <a href="#contacto">Contáctame</a>
+    </div>
 </header>
 
 <nav>
@@ -36,78 +49,84 @@
     <a href="#experiencia">Experiencia</a>
     <a href="#educacion">Formación</a>
     <a href="#certificaciones">Certificaciones</a>
-    <a href="#participaciones">Participaciones</a>
+    <a href="#participaciones">Eventos</a>
     <a href="#idiomas">Idiomas</a>
 </nav>
 
 <section id="resumen">
     <h2>🧠 Resumen Profesional</h2>
-    <p>Arquitecto de soluciones cloud con más de 10 años de experiencia liderando proyectos de transformación digital y arquitectura de datos.
-    Especialista en Big Data sobre AWS y Azure, con énfasis en rendimiento, escalabilidad y seguridad.
-    Experto en DevOps, infraestructura como código y soluciones distribuidas. Speaker activo en eventos de AWS.</p>
+    <p>Arquitecto cloud con más de 10 años de experiencia en proyectos de transformación digital, arquitectura de datos y soluciones distribuidas. Especialista en plataformas AWS y Azure, con dominio en Big Data, contenedores y DevOps. Participante activo en comunidades tecnológicas como AWS Perú.</p>
 </section>
 
 <section id="habilidades">
     <h2>⚙️ Habilidades Técnicas</h2>
-    <ul>
-        <li>Cloud: AWS (ECS, Lambda, Athena, S3, Well-Architected), Azure</li>
-        <li>Big Data: Amazon Athena, Redshift, Hive, SQL distribuido</li>
-        <li>Contenedores: Docker, ECS Fargate, Kubernetes (EKS)</li>
-        <li>Lenguajes: Python, Bash, SQL</li>
-        <li>DevOps & Infra: Terraform, Jenkins, Git, Linux, VMware</li>
-        <li>Seguridad: Firewalls, SELinux, mitigación DDoS</li>
-        <li>Gestión: Jira, Confluence, ServiceNow</li>
-    </ul>
+    <div class="grid">
+        <ul>
+            <li>☁️ AWS: ECS, Lambda, S3, Athena, Redshift</li>
+            <li>📊 Big Data: Hive, SQL distribuido, S3 Data Lakes</li>
+            <li>📦 Contenedores: Docker, ECS Fargate, Kubernetes</li>
+            <li>🔧 DevOps: Terraform, Jenkins, Git, CI/CD</li>
+        </ul>
+        <ul>
+            <li>🐍 Lenguajes: Python, Bash, SQL</li>
+            <li>🔐 Seguridad: DDoS, firewalls, SELinux</li>
+            <li>🛠️ Herramientas: Jira, Confluence, ServiceNow</li>
+            <li>🧠 Arquitectura: Well-Architected Framework</li>
+        </ul>
+    </div>
 </section>
 
 <section id="experiencia">
     <h2>💼 Experiencia Profesional</h2>
     <h3>Pontificia Universidad Católica del Perú (PUCP)</h3>
-    <p><strong>📌 Profesional de Aplicaciones Web y Arquitectura Cloud | Sept. 2012 – Actualidad</strong></p>
+    <p><strong>Arquitecto Cloud | 2012 – Actualidad</strong></p>
     <ul>
-        <li>Arquitectura de clúster de contenedores (ECS Fargate)</li>
-        <li>Análisis distribuido con Athena sobre S3</li>
-        <li>Migración de sistemas a la nube (alta disponibilidad)</li>
-        <li>Implementación de AWS Well-Architected</li>
-        <li>Estrategias anti-DDoS y recuperación ante desastres</li>
+        <li>Diseño de arquitectura escalable con ECS Fargate y servicios AWS</li>
+        <li>Implementación de análisis con Amazon Athena sobre S3</li>
+        <li>Migración de sistemas legados a la nube con enfoque en HA y DR</li>
+        <li>Gestión de seguridad, mitigación de DDoS y recuperación ante desastres</li>
     </ul>
 </section>
 
 <section id="educacion">
     <h2>🎓 Formación Académica</h2>
     <ul>
-        <li>Arquitectura de Datos Empresariales con mención en Big Data – CIBERTEC (2022 – 2024)</li>
+        <li>CIBERTEC – Arquitectura de Datos Empresariales (2022–2024)</li>
     </ul>
 </section>
 
 <section id="certificaciones">
-    <h2>📜 Certificaciones y Cursos</h2>
+    <h2>📜 Certificaciones</h2>
     <ul>
-        <li>Scrum Fundamentals Certified — SCRUMstudy, 2024</li>
-        <li>Microdegree en Fundamentos de Agilidad — PUCP, 2024</li>
-        <li>Microdegree en Comunicación Estratégica — PUCP, 2025</li>
-        <li>MOOC: Dirección Estratégica — Centrum PUCP, 2015</li>
+        <li>Scrum Fundamentals Certified — SCRUMstudy</li>
+        <li>Microdegree en Agilidad y Comunicación Estratégica — PUCP</li>
+        <li>MOOC: Dirección Estratégica — Centrum PUCP</li>
     </ul>
 </section>
 
 <section id="participaciones">
-    <h2>🌟 Participaciones Destacadas</h2>
+    <h2>🌟 Eventos y Participaciones</h2>
     <ul>
-        <li>Speaker en AWS Community Day Perú 2024</li>
-        <li>Certificado: https://validated.awscommunityperu.pe/certificate/AWSCD24-S-35a538ed</li>
+        <li>Speaker – AWS Community Day Perú 2024</li>
+        <li><a href="https://validated.awscommunityperu.pe/certificate/AWSCD24-S-35a538ed" target="_blank">Certificado oficial</a></li>
     </ul>
 </section>
 
 <section id="idiomas">
     <h2>🌐 Idiomas</h2>
     <ul>
-        <li>Español: Nativo</li>
-        <li>Inglés: Intermedio (C1 técnico en curso)</li>
+        <li>Español – Nativo</li>
+        <li>Inglés – Intermedio (C1 técnico en progreso)</li>
     </ul>
 </section>
 
+<section id="contacto">
+    <h2>📨 Contacto</h2>
+    <p>¿Interesado en trabajar juntos o colaborar? Estoy disponible para proyectos remotos o híbridos. Escríbeme a <strong>waltersud@gmail.com</strong></p>
+</section>
+
 <footer>
-    &copy; 2025 Walter Arévalo – Todos los derechos reservados
+    &copy; 2025 Walter Arévalo. Desarrollado con 💙 estilo profesional tipo Google/Apple.
 </footer>
 
 </body>
